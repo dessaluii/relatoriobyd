@@ -1,29 +1,63 @@
 import streamlit as st
 
 # Configuração da página
-st.set_page_config(page_title="Relatório BYD", page_icon="🚗", layout="wide")
+st.set_page_config(page_title="Relatório BYD", page_icon="https://logos-world.net/wp-content/uploads/2021/08/BYD-Symbol.png", layout="wide")
 
-# Aplicando fundo branco e texto preto via CSS
-st.markdown("""
-    <style>
-        body {
-            background-color: white;
-            color: black;
-        }
-        h1 {
-            color: black;
-            text-align: center;
-        }
-        h2, h3, p {
-            color: black;
-            text-align: left;
-        }
-        p {
-            font-size: 18px;
-            text-align: justify;
-        }
-    </style>
-""", unsafe_allow_html=True)
+/* Deixa o fundo branco e os textos pretos */
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalhos pretos e com bom contraste */
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+/* Parágrafos e textos gerais */
+p, li, span, a {
+  color: black;
+}
+
+/* Links (sem aquele azul padrão) */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Deixa as seções limpas e alinhadas */
+section {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+/* Centraliza títulos principais */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Ajusta subtítulos */
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Remove qualquer fundo escuro antigo */
+header, footer {
+  background-color: white;
+  color: black;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 10px 0;
+}
 
 # Título principal
 st.markdown("<h1>Relatório BYD</h1>", unsafe_allow_html=True)
