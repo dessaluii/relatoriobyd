@@ -1,68 +1,57 @@
 import streamlit as st
 
 # Configuração da página
-st.set_page_config(page_title="Relatório BYD"gi, layout="wide")
+st.set_page_config(page_title="Relatório BYD", layout="wide")
 
-/* Deixa o fundo branco e os textos pretos */
-body {
-  background-color: white;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+# --- CSS: fundo branco e textos pretos ---
+st.markdown("""
+    <style>
+    body {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: black;
+    }
+    p, li, span, a {
+        color: black;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    section {
+        background-color: white;
+        color: black;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    header, footer {
+        background-color: white;
+        color: black;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        padding: 10px 0;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
-/* Cabeçalhos pretos e com bom contraste */
-h1, h2, h3, h4, h5, h6 {
-  color: black;
-}
-
-/* Parágrafos e textos gerais */
-p, li, span, a {
-  color: black;
-}
-
-/* Links (sem aquele azul padrão) */
-a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Deixa as seções limpas e alinhadas */
-section {
-  background-color: white;
-  color: black;
-  padding: 20px;
-}
-
-/* Centraliza títulos principais */
-h1 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-/* Ajusta subtítulos */
-h2 {
-  font-size: 1.5em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* Remove qualquer fundo escuro antigo */
-header, footer {
-  background-color: white;
-  color: black;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  text-align: center;
-  padding: 10px 0;
-}
-
-# Título principal
+# --- Conteúdo do Relatório ---
 st.markdown("<h1>Relatório BYD</h1>", unsafe_allow_html=True)
 
-# Subtítulo centralizado
 st.markdown("""
 <p style="text-align: center; font-size: 20px;">
 Build Your Dreams (BYD), se mostra como uma empresa high-tech fabricante de veículos,
@@ -83,7 +72,6 @@ empresa concorrente, no ano de 2024, assim tornando-se a maior fabricante no mun
 de trabalho na área de P&D (pesquisa e desenvolvimento).
 """)
 
-# Parágrafo extra
 st.markdown("<h3>Já a Descrição da Organização</h3>", unsafe_allow_html=True)
 st.write("""
 Mostra-se que ela se mantém situada em duas padronizações de setores: secundário e terciário. 
@@ -95,7 +83,6 @@ na promoção da geração de energia, armazenamento eficiente e mobilidade elé
 no setor terciário ligado a comércio, serviço, investimento na educação e tecnologia.
 """)
 
-# --- Continuação com parágrafo do ambiente operacional (sem o título antigo) ---
 st.write("""
 Dentro do contexto de identificação de elementos no ambiente contextual e operacional, fatores como gestão estratégica,
 análise de riscos, planejamento de projetos e inteligência empresarial são pilares essenciais para o funcionamento de um projeto.
@@ -105,14 +92,12 @@ Por conta de sua alta participação no setor e integração vertical, a empresa
 mas também os lidera e influencia de acordo com suas necessidades.
 """)
 
-# Citação centralizada
 st.markdown("""
 <p style="text-align: center; font-weight: bold; font-style: italic; font-size: 18px;">
 “Inovações tecnológicas para uma vida melhor”
 </p>
 """, unsafe_allow_html=True)
 
-# --- Cultura Organizacional (mantida igual, mas sem título numerado) ---
 st.write("""
 A cultura organizacional da BYD é tomada por valores como excelência, paixão e inovação, que representam o espírito da empresa
 na sua busca por trazer soluções tecnológicas e sustentáveis para o mundo, como é dito em seu slogan.
@@ -130,7 +115,6 @@ Consequentemente, isso promove um ambiente de trabalho dinâmico e colaborativo,
 em que a experimentação e a aprendizagem contínua são valorizadas.
 """)
 
-# --- Nova seção: Estratégia da BYD ---
 st.markdown("<h3>BYD tem como estratégia</h3>", unsafe_allow_html=True)
 st.write("""
 A BYD tem se destacado por sua capacidade de adaptação às condições do mercado brasileiro e às mudanças do ambiente global.
@@ -152,7 +136,6 @@ R$5,5 bilhões com a meta de gerar, em média, 20 mil empregos diretos e indiret
 a marca das políticas públicas de desenvolvimento industrial sustentável.
 """)
 
-# --- Espaço final + Integrantes ---
 st.markdown("<br><br>", unsafe_allow_html=True)
 st.markdown("""
 <h3 style="text-align: center;">Integrantes do Grupo:</h3>
