@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Configuração da página
-st.set_page_config(page_title="Relatório BYD", page_icon="https://logos-world.net/wp-content/uploads/2021/08/BYD-Symbol.png", layout="wide")
+st.set_page_config(page_title="Relatório BYD"gi, layout="wide")
 
 /* Deixa o fundo branco e os textos pretos */
 body {
