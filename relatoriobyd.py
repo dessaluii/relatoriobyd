@@ -1,9 +1,9 @@
 import streamlit as st
 
-# Configuração da página
+# configuração
 st.set_page_config(page_title="Relatório BYD", layout="wide")
 
-# --- CSS: fundo branco e textos pretos ---
+# layout da pag
 st.markdown("""
     <style>
     body {
@@ -49,7 +49,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Conteúdo do Relatório ---
+# cabeçalho e subtitulo
 st.markdown("<h1>Relatório BYD</h1>", unsafe_allow_html=True)
 
 st.markdown("""
@@ -60,7 +60,7 @@ referentes à área automobilística.
 </p>
 """, unsafe_allow_html=True)
 
-# --- 1ª Parte ---
+# corpo
 st.markdown("<h3><b>A descrição e organização da BYD se caracteriza por</b></h3>", unsafe_allow_html=True)
 st.write("""
 A BYD é sem dúvidas uma empresa de grande porte (figura no ranking Fortune Global 500)
